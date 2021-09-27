@@ -1,8 +1,8 @@
 import questionnaire
-from PIL import Image, ImageDraw
 import os
 
 if __name__ == "__main__":
+
     path_boegen = 'Evaluationshelfer_Daten/boegen'
     ref_file = path_boegen + '/Bogen1.jpg'
     path_boxes_ref = 'Evaluationshelfer_Daten/boxes/Bogen1'
@@ -22,7 +22,8 @@ if __name__ == "__main__":
             if not os.path.exists(path_boxes):
                 os.makedirs(path_boxes)
             curr_questionnaire = questionnaire.Questionnaire(curr_file, ref_boxes=refBoxes, ref_points=refPoints, isReference=False, target_path=path_boxes)
-            print(file[:-4]+' Done')
+
+        
             
 
         
