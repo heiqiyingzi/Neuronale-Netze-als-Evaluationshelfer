@@ -22,7 +22,7 @@ if __name__ == "__main__":
             if not os.path.exists(path_boxes):
                 os.makedirs(path_boxes)
             curr_questionnaire = questionnaire.Questionnaire(curr_file, ref_boxes=refBoxes, ref_points=refPoints, isReference=False, target_path=path_boxes)
-
+            print(str(file[:-4]) + ' Done')
         
             
 
