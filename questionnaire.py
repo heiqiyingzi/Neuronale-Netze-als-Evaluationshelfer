@@ -219,5 +219,5 @@ class Questionnaire:
                                         self.curr_boxes['y'+str(j+1)][i]-30,
                                         self.curr_boxes['x'+str(j+1)][i]+30, 
                                         self.curr_boxes['y'+str(j+1)][i]+30])
-                box = box.resize((50, 50))
+                box = box.resize((40, 40))
                 box.save(self.target_path + '/Q{}A{}.png'.format(i+1,j+1))
